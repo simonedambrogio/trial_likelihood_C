@@ -56,8 +56,8 @@ NumericVector likelihood_C(NumericVector media, NumericVector correctedFixTime, 
   
   NumericVector result = {probUpCrossing[sum_correctedFixTime-1], probDownCrossing[sum_correctedFixTime-1]};
   
-  if (result[1] < 1e-10) result[1] = 1e-10;
-  if (result[2] < 1e-10) result[2] = 1e-10;
+  // if (result[1] < 1e-10) result[1] = 1e-10;
+  // if (result[2] < 1e-10) result[2] = 1e-10;
   
   return(result);
 }  
